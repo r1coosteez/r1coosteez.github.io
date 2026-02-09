@@ -1,11 +1,11 @@
  h1, h2, h3 {
-    font-family: 'Dancing Script'; cursive;
+    font-family: 'Dancing Script', cursive;
  }
 
  body, p, a {
     background-color: #0d0d0d;
     color: white;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Dancing Script', cursive;
   } 
  .back-btn {
     display: inline-block;
@@ -59,4 +59,179 @@ body {
 .build-notes h2 {
     margin-bottom: 10px;
     font-size: 20px;
+}
+.page-description {
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+#purple-terminal {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.page-description {
+  max-width: 700px;
+  margin: 0 auto 25px auto;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.terminal {
+  background-color: #111;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  font-family: "Fira Code", monospace;
+  color: #e5e5e5;
+  overflow: hidden;
+}
+
+.terminal-header {
+  background-color: #222;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.terminal-header .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.terminal-header .red { background-color: #ff5f57; }
+.terminal-header .yellow { background-color: #febc2e; }
+.terminal-header .green { background-color: #28c840; }
+
+.terminal-title {
+  margin-left: 10px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.terminal-body {
+  padding: 12px;
+  height: 260px;
+  overflow-y: auto;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
+#about-terminal {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.terminal {
+  background-color: #111;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  font-family: "Fira Code", monospace;
+  color: #e5e5e5;
+  overflow: hidden;
+  padding-bottom: 0;
+}
+
+.terminal-header {
+  background-color: #222;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.terminal-header .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.terminal-header .red { background-color: #ff5f57; }
+.terminal-header .yellow { background-color: #febc2e; }
+.terminal-header .green { background-color: #28c840; }
+
+.terminal-title {
+  margin-left: 10px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.terminal-body {
+  position: relative;
+  z-index: 1;
+  padding: 12px;
+  min-height: auto;
+  text-align: left;
+  white-space: pre-wrap;
+  line-height: 1.4;
+}
+
+.terminal-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.terminal-buttons button {
+  padding: 8px 14px;
+  background-color: #222;
+  border: 1px solid #444;
+  color: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.terminal-buttons button:hover {
+  background-color: #333;
+  border-color: #666;
+}
+.sub-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.sub-buttons button {
+  padding: 6px 12px;
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+  color: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sub-buttons button:hover {
+  background-color: #333;
+  border-color: #666;
+}
+.terminal-back {
+  display: block;
+  text-align: left;
+  margin: 10px 0 0 12px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.terminal-back:hover {
+  color: #fff;
 }

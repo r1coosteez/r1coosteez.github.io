@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
   <h1>About Me</h1>
@@ -12,7 +13,34 @@
     I'm a high school student interested in cybersecurity, programming, fashion, music production, and the esports scene. I'm interested in building real technical skills early on.
   </p>
 
-  <a href="index.html" class="back-btn">&larr; Back to Home</a>
+<section id="about-terminal"
+  <div class="terminal">
+    <div class="terminal-header"> 
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="terminal-title">rico@about:~$</span></div>
+  
+    <div class="terminal-body" id="about-output">
+      <span class="prompt">$</span> Select a command below
+      <a href="index.html" class="back-btn terminal-back">&larr; Back to Home</a>
+    </div>
+  </div>
+  
+  <div class="terminal-buttons">
+    <button data-command="skills">Skills</button>
+    <button data-command="experience">Experience</button>
+    <button data-command="goals">Goals</button>
+    <button data-command="interests">Interests</button>
+  </div>
 
+<div class="sub-buttons" id="sub-buttons" style="display:none;"
+    <button data-sub="esports">Esports</button>
+    <button data-sub="fashion">Fashion</button>
+    <button data-sub="music">Beats</button>
+</div>
+</section>
+  
+<script src="about-terminal.js"></script>
 </body>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Purple Team Sim. | RICO</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <h1>Purple Team Simulation</h1>
+    <p class="page-description">
+        In this simulation, I demonstrated a basic Purple Team exercise. The Red Team system (10.0.2.5) performs a TCP port scan against a Blue Team system (10.0.2.6). I analyze the network traffic in Wireshark to identify open and closed ports and observed how scanning activity appears in packet captures. This demo shows the attack, detection, and defensive workflow in a controlled lab environment.
+    </p>
+<section id="purple-terminal">
+    <div class="terminal">
+         <div class="terminal-header">
+             <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">rico@purple_team:~$</span>
+        </div>
+    <div class="terminal body" id="terminal-output"></div>
+    </div>
+</section>
+<script src="purple-terminal.js"></script>
+</body>
