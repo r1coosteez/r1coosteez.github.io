@@ -1,0 +1,61 @@
+ body {
+    background-color: #0d0d0d;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+ } 
+ .back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 14px;
+    border: 1px solid white;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: all 0.2s ease;
+ }
+ .back-btn:hover {
+    background-color: white;
+    color: black;
+ 
+ }
+
+ .project-description {
+    margin-bottom: 20px;
+    max-width: 600px;
+    line-height: 1.5;
+ }
+.scanner-section {
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+ul li a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: 0.2s;
+}
+ul li a:hover {
+    border-bottom: 1px solid white;
+}
+body {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+.build-notes {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    max-width: 1.6;
+}
+.build-notes h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+    

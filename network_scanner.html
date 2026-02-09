@@ -2,20 +2,34 @@
 <html>
 <head>
     <title>Network Scanner</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<h1>Network Scanner Demo</h1>
-<label>Network Range:</label>
-<input type="text" id="range" placeholder+"192.168.1.0/24">
+    <h1>Network Scanner Demo</h1>
 
-<br><br>
+    <p class="project-description">
+    This is a Python-based network scanner that uses the `scapy` library to perform a simple ping sweep on a specified IP range. It identifies active hosts on the network and displays their IP addresses, MAC addresses, and response times. The scanner is designed for educational purposes to demonstrate basic network scanning, ARP requests, and Python scripting. It can be used to learn about network discovery!
+    </p>
+    
+    <div class="scanner-section">
+        <label>Network Range:</label>
+        <input type="text" id="range" placeholder="192.168.1.0/24">
 
-<button onclick="scan()">Scan Network</button>
-<button onclick="clearResults()">Clear</button>
+        <br><br>
 
-<pre id="output"</pre>
+        <button onclick="scan()">Scan Network</button>
+        <button onclick="clearResults()">Clear</button>
 
-<script src="scanner.js"></script>
+        <pre id="output"></pre>
+    </div>
+
+    <a href="projects.html" class="back-btn">&larr; Back to Projects</a>
+
+    <script src="scanner.js"></script>
+
+    <p class="build-notes">
+    This project started as a way for me to get hands‑on with network behavior instead of just reading about it. I built a lightweight interface that mirrors the flow of a real scanner, tying together the logic I wrote in Python with a simple front‑end to make the process easy to visualize. The goal wasn’t to create a full‑blown security tool — just something that shows how hosts respond, how a sweep is structured, and how the pieces fit together behind the scenes. It’s a clean little demo that helped me understand the fundamentals while keeping everything approachable.
+    </p></h2>
 </body>
 </html>
