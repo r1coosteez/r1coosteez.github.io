@@ -1,9 +1,12 @@
- body {
+ h1, h2, h3 {
+    font-family: 'Dancing Script'; cursive;
+ }
+
+ body, p, a {
     background-color: #0d0d0d;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
- 
- } 
+    font-family: 'Inter', sans-serif;
+  } 
  .back-btn {
     display: inline-block;
     margin-bottom: 20px;
@@ -57,5 +60,3 @@ body {
     margin-bottom: 10px;
     font-size: 20px;
 }
-
-    
