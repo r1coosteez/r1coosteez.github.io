@@ -1,11 +1,11 @@
- h1, h2, h3 {
-    font-family: 'Dancing Script', cursive;
- }
+ h1 {
+  font-family: 'Source Serif Pro', serif;
+ } 
 
- body, p, a {
+ body{
     background-color: #0d0d0d;
     color: white;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Merriweather', serif;
   } 
  .back-btn {
     display: inline-block;
