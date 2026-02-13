@@ -1,0 +1,73 @@
+.r2bar{
+  position:fixed;
+  top:0; left:0; right:0;
+  height:44px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:0 12px;
+  border-bottom:1px solid rgba(255,255,255,0.03);
+  z-index:1000;
+}
+
+/* Desktop area */
+.r2desktop{
+  padding-top:56px;
+  min-height:100vh;
+  background:linear-gradient(180deg, rgba(0,0,0,0.02), transparent);
+}
+
+/* Window */
+.r2window{
+  position:absolute;
+  width:720px;
+  height:420px;
+  background:var(--surface);
+  border-radius:var(--radius);
+  border:1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 8px 30px rgba(2,6,23,0.6), 0 0 12px rgba(0,209,255,0.04);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  backdrop-filter: blur(6px);
+}
+
+/* Window titlebar */
+.r2window .title{
+  height:40px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:0 12px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+  border-bottom:1px solid rgba(255,255,255,0.02);
+  cursor:grab;
+}
+.r2window .title .controls{
+  margin-left:auto;
+  display:flex;
+  gap:8px;
+}
+.r2window .title .controls button{
+  width:12px; height:12px; border-radius:50%;
+  border:none; outline:none;
+}
+.btn-close{background:#ff5f56}
+.btn-min{background:#ffbd2e}
+.btn-max{background:#27c93f}
+
+/* Terminal content */
+.terminal{
+  padding:12px;
+  font-size:14px;
+  color:var(--accent-2);
+  background:transparent;
+  flex:1;
+  overflow:auto;
+  white-space:pre-wrap;
+}
+.input-line{display:flex; gap:8px; align-items:center}
+.input-line input{
+  background:transparent; border:none; color:var(--text); outline:none; width:100%;
+}

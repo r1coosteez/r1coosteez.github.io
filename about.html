@@ -2,8 +2,12 @@
 <html>
 <head>
   <title>About Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/r2os.css">
 </head>
 
 <body>
@@ -14,17 +18,14 @@
   </p>
 
 <section id="about-terminal"
-  <div class="terminal">
-    <div class="terminal-header"> 
-      <span class="dot red"></span>
-      <span class="dot yellow"></span>
-      <span class="dot green"></span>
-      <span class="terminal-title">rico@about:~$</span></div>
-  
-    <div class="terminal-body" id="about-output">
-      <span class="prompt">$</span> Select a command below
-    </div>
+<div class="r2window" id="term-window" style="left:80px; top:80px;">
+  <div class="title"><div class="name">Terminal</div><div class="controls">...</div></div>
+  <div class="terminal" id="r2terminal">
+    <div class="terminal-output" aria-live="polite"></div>
+    <div class="input-line"><span>$</span><input autocomplete="off" aria-label="Terminal input"></div>
   </div>
+</div>
+
   
   <div class="terminal-buttons">
     <button data-command="skills">Skills</button>
@@ -41,5 +42,16 @@
 </section>
   
 <a href="index.html" class="back-btn terminal-back">&larr; Back to Home</a>
+<script src="js/draggable.js"></script>
+<script src="js/terminal.js"></script>
+<script src="js/r2os.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', ()=>{
+    // If r2os.js creates the terminal window, init Terminal from r2os.init()
+    Terminal.init('#r2terminal');
+    r2os.init();
+  });
+</script>
+
 </body>
 </html>

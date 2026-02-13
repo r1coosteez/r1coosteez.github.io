@@ -235,3 +235,29 @@ body {
 .terminal-back:hover {
   color: #fff;
 }
+:root{
+  --bg: #0b0f14;
+  --surface: #0f1720;
+  --accent: #1793d1;
+  --accent-2: #00d1ff;
+  --text: #e6eef6;
+  --muted: #9aa6b2;
+  --glass: rgba(255,255,255,0.04);
+  --radius: 8px;
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  min-height:100%;
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--mono);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.4;
+}
+a{color:var(--accent)}
+button{font-family:var(--mono)}
