@@ -1,0 +1,31 @@
+body {
+    background: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} 
+
+.player {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+} 
+
+button {
+    background: #1db954;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+} 
+
+input[types="range"] {
+    width: 100%;
+} 
